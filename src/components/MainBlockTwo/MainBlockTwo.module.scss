@@ -1,0 +1,207 @@
+@import '../../style/Colors.scss';
+
+.main {
+  margin-top: 126px;
+  position: relative;
+  &__title {
+    position: relative;
+    font-size: 48px;
+    font-family: "FredokaOne";
+    font-weight: 400;
+    color: #333;
+    margin-bottom :85px;
+    text-transform: uppercase;
+    line-height: 1.25;
+    text-align: center;
+    z-index: 1;
+  }
+  &__info {
+    display: block;
+    position: relative;
+    text-align: right;
+    font-size: 24px;
+    margin-right: 160px;
+    font-family: "Lato";
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+    z-index: 1;
+  }
+  &__img {
+    position: relative;
+    z-index: 1;
+  }
+  &__imgArrow {
+    margin-left: 25px;
+    color: $orange;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  &__itemBtn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 20px;
+  }
+  &__imgBtn {
+    position: relative;
+    margin-right: 100px;
+    z-index: 1;
+  }
+  &__num {
+    position: relative;
+    font-size: 30px;
+    font-family: "Lato";
+    color: $halfGray;
+    width: 60px;
+    z-index: 1;
+  }
+  &__btn {
+    display: block;
+    position: relative;
+    background: none;
+    padding: 20px 34px 20px 79px;
+    border-width: 1px;
+    border-color: $orange;
+    border-radius: 40px;
+    cursor: pointer;
+    outline: none;
+    font-size: 24px;
+    font-family: "FredokaOne";
+    margin-bottom: 10px;
+    color: $orange;
+    text-transform: uppercase;
+    z-index: 1;
+  }
+  &__add {
+    position: relative;
+    color: #fff;
+    border-radius: 50%;
+    background-color: $orange;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.12),0 6px 6px 0 rgba(0, 0, 0, 0.24);
+    margin-left: auto;
+    margin-right: 20px;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    z-index: 1;
+    &::before {
+      content: '+';
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      top: 30%;
+      right: 34%;
+    }
+  }
+  &__inputOne[type=range] {
+    display: block;
+    position: relative;
+    width: 620px;
+    margin: 0 auto;
+    cursor: pointer;
+    appearance: none;
+    outline: none;
+    z-index: 1;
+    border: 2px;
+    background: $mediumGreen;
+  }
+  &__inputTwo[type=range] {
+    display: block;
+    position: relative;
+    width: 620px;
+    margin: 0 auto;
+    cursor: pointer;
+    appearance: none;
+    outline: none;
+    z-index: 1;
+    border: 2px;
+    background: $doubleGreen;
+  }
+  &__inputThree[type=range] {
+    display: block;
+    position: relative;
+    width: 620px;
+    margin: 0 auto;
+    cursor: pointer;
+    appearance: none;
+    outline: none;
+    z-index: 1;
+    border: 2px;
+    background: $doubleGreen;
+  }
+  &__inputFour[type=range] {
+    display: block;
+    position: relative;
+    width: 620px;
+    margin: 0 auto;
+    cursor: pointer;
+    appearance: none;
+    outline: none;
+    z-index: 1;
+    border: 2px;
+    background: $doubleGreen;
+  }
+}
+.main__inputOne[type=range]::-webkit-slider-runnable-track {
+  height: 2px;
+  cursor: pointer;
+  background: $mediumGreen;
+}
+.main__inputTwo[type=range]::-webkit-slider-runnable-track {
+  height: 2px;
+  cursor: pointer;
+  background: $doubleGreen;
+}
+.main__inputThree[type=range]::-webkit-slider-runnable-track {
+  height: 2px;
+  cursor: pointer;
+  background: $yellow;
+}
+.main__inputFour[type=range]::-webkit-slider-runnable-track {
+  height: 2px;
+  cursor: pointer;
+  background: #333;
+}
+.main__inputOne[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 2px solid $mediumGreen;
+  height: 37px;
+  width: 37px;
+  border-radius: 50%;
+  background: none;
+  cursor: pointer;
+  margin-top: -17px;
+}
+.main__inputTwo[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 2px solid $doubleGreen;
+  height: 37px;
+  width: 37px;
+  border-radius: 50%;
+  background: none;
+  cursor: pointer;
+  margin-top: -17px;
+}
+.main__inputThree[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 2px solid $yellow;
+  height: 37px;
+  width: 37px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -17px;
+}
+.main__inputFour[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 2px solid $halfGray;
+  height: 37px;
+  width: 37px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -17px;
+}

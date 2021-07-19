@@ -1,0 +1,33 @@
+@import '../../style/Fonts.scss';
+@import '../../style/Colors.scss';
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+}
+.main {
+  position: relative;
+  background: url(../../components/img/Main.png);
+  background-size: cover;
+  padding: 86px 0 55px 0;
+  margin-top: -8px;
+  &::before {
+    content: '';
+    position: absolute;
+    background: url(../../components/img/Main-two.png);
+    width: 380px;
+    height: 380px;
+    top: 13%;
+    left: 24.8%;
+    z-index: 1;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    background-color: $white;
+    opacity: 0.741;
+    width: 100%;
+    height: 2048px;
+    top: 0;
+    left: 0;
+  }
+}

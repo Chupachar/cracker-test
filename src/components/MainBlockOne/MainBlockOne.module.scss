@@ -1,0 +1,49 @@
+@import '../../style/Colors.scss';
+h2 {
+  margin: 0;
+}
+.main {
+  position: relative;
+  &__title {
+    position: relative;
+    font-size: 48px;
+    font-family: "FredokaOne";
+    text-align: right;
+    font-weight: 400;
+    color: $gray;
+    text-transform: uppercase;
+    line-height: 1.25;
+    z-index: 1;
+  }
+  &__info {
+    display: block;
+    position: relative;
+    font-size: 18px;
+    font-family: "LatoBold";
+    color: $halfGray;
+    line-height: 1.556;
+    text-indent: 37px;
+    text-align: justify;
+    margin: 100px 0 54px 0;
+    max-width: 69%;
+    transform: translateX(35%);
+    z-index: 1;
+    //&::before {
+    //  content: '';
+    //  position: absolute;
+    //  background-color: $mediumWhite;
+    //  opacity: 0.871;
+    //  width: 1270px;
+    //  height: 360px;
+    //  top: -11%;
+    //  right: -84%;
+    //  z-index: -1;
+    //}
+  }
+  &__imgLogo {
+    display: block;
+    position: relative;
+    margin-left: auto;
+    z-index: 1;
+  }
+}

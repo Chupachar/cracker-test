@@ -1,0 +1,48 @@
+@import '../../style/Colors.scss';
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 940px;
+  margin: 0 auto;
+}
+.footer {
+  position: relative;
+  background: url(../../components/img/Footer.png);
+  background-size: cover;
+  padding: 50px 0 480px 0;
+  &__titleOne {
+    font-size: 16px;
+    font-family: "FredokaOne";
+    color: $white;
+    text-transform: uppercase;
+    line-height: 3.81;
+    margin-left: 20px;
+  }
+  &__infoOne {
+    display: block;
+    font-size: 14px;
+    font-family: "LatoBold";
+    color: $white;
+    line-height: 1.786;
+    margin-left: 40px;
+  }
+  &__infoTwo {
+    display: block;
+    font-size: 14px;
+    font-family: "LatoBold";
+    color: $white;
+    line-height: 1.786;
+    margin-left: 40px;
+    text-decoration: none;
+  }
+  &__infoBlock {
+    display: flex;
+    align-items: center;
+  }
+  &__infoBlockTwo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+}

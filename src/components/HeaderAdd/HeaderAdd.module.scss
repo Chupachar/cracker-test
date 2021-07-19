@@ -1,0 +1,51 @@
+@import '../../style/Fonts.scss';
+@import '../../style/Colors.scss';
+.headerAdd {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 30px;
+&__icon {
+  cursor: pointer;
+  margin-right: 84px;
+  }
+&__arrow {
+  cursor: pointer;
+  width: 15px;
+  height: 9px;
+  margin-left: 17px;
+  margin-top: 11px;
+}
+&__txtOne {
+  position: relative;
+  font-size: 14px;
+  font-family: "Lato";
+  color: $white;
+  margin-right: 27px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 2.571;
+  z-index: 1;
+  }
+&__txtTwo {
+  position: relative;
+  font-size: 14px;
+  font-family: "Lato";
+  color: $white;
+  margin-right: 55px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 2.571;
+  z-index: 1;
+}
+&__txtThree {
+  position: relative;
+  font-size: 14px;
+  font-family: "Lato";
+  color: $white;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 2.571;
+  z-index: 1;
+}
+}
